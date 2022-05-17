@@ -11,7 +11,7 @@ import { SubmitButton } from "./Form.css";
 
 export const Form = () => {
   return (
-    <form id="resume-box" action="Submission.html">
+    <form id="resume-box" action="">
       <FormTitle />
       <FirstNameInput />
       <LastNameInput />

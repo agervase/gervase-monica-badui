@@ -1,11 +1,28 @@
 import React from "react";
+import { uniqueNamesGenerator, Config, names } from "unique-names-generator";
+import { Container } from "./FirstNameInput.css";
 
 // randomly generated name
 export const FirstNameInput = () => {
+  const [value, setValue] = React.useState<string>();
+
+  const config: Config = {
+    dictionaries: [names],
+  };
+
+  const getNewName = () => {
+    const characterName: string = uniqueNamesGenerator(config);
+    setValue(characterName);
+  };
+
   return (
-    <div>
-      <label>First Name:</label>
-      <input type="text" id="first-name" name="first-name" />
-    </div>
+    <Container>
+      <div>
+        <label>First Name:</label> {value}
+      </div>
+      <button type="button" onClick={() => getNewName()}>
+        Generate {value && `New`} Name
+      </button>
+    </Container>
   );
 };
