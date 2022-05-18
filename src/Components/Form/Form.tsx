@@ -7,7 +7,8 @@ import { LastNameInput } from "./../LastNameInput/LastNameInput";
 import React from "react";
 import { FirstNameInput } from "../FirstNameInput/FirstNameInput";
 import { FormTitle } from "../FormTitle/FormTitle";
-import { FormContainer, SubmitButton } from "./Form.css";
+import { FormContainer } from "./Form.css";
+import { SubmitButton } from "../SubmitButton/SubmitButton";
 
 export const Form = () => {
   return (
@@ -21,7 +22,7 @@ export const Form = () => {
         <PhoneInput />
         <AddressInput />
         <CommentInput />
-        <SubmitButton id="submit" type="submit" value="Submit" />
+        <SubmitButton />
       </form>
     </FormContainer>
   );
