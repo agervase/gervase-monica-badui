@@ -1,10 +1,9 @@
 import React from "react";
-import Slider from "@material-ui/core/Slider";
 import { CustomSlider, Container } from "./DobInput.css";
 
 // slider selection
 export const DobInput = () => {
-  const JanFirst1900 = 44698;
+  const JanFirst1900 = 44696;
 
   function getFormattedDate(date: Date) {
     var year = date.getFullYear();
