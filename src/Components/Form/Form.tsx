@@ -7,20 +7,22 @@ import { LastNameInput } from "./../LastNameInput/LastNameInput";
 import React from "react";
 import { FirstNameInput } from "../FirstNameInput/FirstNameInput";
 import { FormTitle } from "../FormTitle/FormTitle";
-import { SubmitButton } from "./Form.css";
+import { FormContainer, SubmitButton } from "./Form.css";
 
 export const Form = () => {
   return (
-    <form id="resume-box" action="">
-      <FormTitle />
-      <FirstNameInput />
-      <LastNameInput />
-      <DobInput />
-      <EmailInput />
-      <PhoneInput />
-      <AddressInput />
-      <CommentInput />
-      <SubmitButton id="submit" type="submit" value="Submit" />
-    </form>
+    <FormContainer>
+      <form id="resume-box" action="">
+        <FormTitle />
+        <FirstNameInput />
+        <LastNameInput />
+        <DobInput />
+        <EmailInput />
+        <PhoneInput />
+        <AddressInput />
+        <CommentInput />
+        <SubmitButton id="submit" type="submit" value="Submit" />
+      </form>
+    </FormContainer>
   );
 };
