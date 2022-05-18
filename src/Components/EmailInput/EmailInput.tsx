@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  EmailInputBox,
+  EmailFakeInput,
+  EmailInputContainer,
+  EmailLabel,
+} from "./EmailInput.css";
 
 // upside down and backwards
 export const EmailInput = () => {
+  const [email, setEmail] = useState("");
+  const reverseString = (str: string) => {
+    return str.slice(-1) + str.slice(0, -1);
+  };
   return (
-    <div>
-      {" "}
-      <label>Email:</label>
-      <input type="email" id="email" name="email" />
-    </div>
+    <EmailInputContainer>
+      <EmailFakeInput />
+      <div>
+        <EmailLabel>Email:</EmailLabel>
+        <EmailInputBox
+          value={email}
+          type="email"
+          id="email"
+          name="email"
+          tabIndex={-1}
+          onChange={(event: { target: { value: string } }) =>
+            setEmail(reverseString(event.target.value))
+          }
+        />
+      </div>
+    </EmailInputContainer>
   );
 };

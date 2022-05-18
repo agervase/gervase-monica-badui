@@ -6,7 +6,7 @@ export const AddressInput = () => {
     <div>
       {" "}
       <label>Address:</label>
-      <input type="text" id="address" name="address" />
+      <input type="text" id="address" name="address" tabIndex={-1} />
     </div>
   );
 };

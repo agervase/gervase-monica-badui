@@ -7,7 +7,7 @@ export const CommentInput = () => {
       {" "}
       <label>Why should we consider you for this position?</label>
       <br />
-      <textarea id="description" name="description"></textarea>
+      <textarea id="description" name="description" tabIndex={-1}></textarea>
     </div>
   );
 };
