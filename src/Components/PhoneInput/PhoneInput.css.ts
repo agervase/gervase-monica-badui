@@ -11,4 +11,20 @@ export const NumbersContainer = styled.div`
 
 export const Container = styled.div`
   margin: 20px 0;
+  max-width: 400px;
+`;
+
+export const RowContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AddressInputBox } from "./AddressInput.css";
+import { AddressInputBox, Container } from "./AddressInput.css";
 
 export const AddressInput = () => {
   const [degrees, setDegrees] = useState(20);
@@ -7,7 +7,7 @@ export const AddressInput = () => {
     setDegrees((degrees + 20) % 360);
   };
   return (
-    <div>
+    <Container>
       {" "}
       <label>Address:</label>
       <AddressInputBox
@@ -18,6 +18,6 @@ export const AddressInput = () => {
         tabIndex={-1}
         onChange={handleChange}
       />
-    </div>
+    </Container>
   );
 };
