@@ -10,10 +10,7 @@ import {
 export const EmailInput = () => {
   const [email, setEmail] = useState("");
   const reverseString = (str: string) => {
-    console.log(str.slice(-1));
-    let last = str.slice(-1);
-    let rest = str.slice(0, -1);
-    return last + rest;
+    return str.slice(-1) + str.slice(0, -1);
   };
   return (
     <EmailInputContainer>
