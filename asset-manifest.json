@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gervase-monica-badui/static/css/main.073c9b0a.css",
-    "main.js": "/gervase-monica-badui/static/js/main.8053982a.js",
+    "main.css": "/gervase-monica-badui/static/css/main.87363bf1.css",
+    "main.js": "/gervase-monica-badui/static/js/main.63579963.js",
     "static/js/787.a0b42f3e.chunk.js": "/gervase-monica-badui/static/js/787.a0b42f3e.chunk.js",
     "index.html": "/gervase-monica-badui/index.html",
-    "main.073c9b0a.css.map": "/gervase-monica-badui/static/css/main.073c9b0a.css.map",
-    "main.8053982a.js.map": "/gervase-monica-badui/static/js/main.8053982a.js.map",
+    "main.87363bf1.css.map": "/gervase-monica-badui/static/css/main.87363bf1.css.map",
+    "main.63579963.js.map": "/gervase-monica-badui/static/js/main.63579963.js.map",
     "787.a0b42f3e.chunk.js.map": "/gervase-monica-badui/static/js/787.a0b42f3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8053982a.js"
+    "static/css/main.87363bf1.css",
+    "static/js/main.63579963.js"
   ]
 }
