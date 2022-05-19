@@ -6,6 +6,4 @@ export const AddressInputBox = styled.input<Props>`
   transform: rotate(${(props) => props.degrees}deg);
 `;
 
-export const Container = styled.div`
-  margin: 25px 0;
-`;
+export const Container = styled.div``;

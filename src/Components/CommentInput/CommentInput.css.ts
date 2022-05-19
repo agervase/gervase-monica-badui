@@ -4,6 +4,4 @@ export const CommentBox = styled.textarea`
   border: none;
 `;
 
-export const Container = styled.div`
-  margin: 20px 0;
-`;
+export const Container = styled.div``;

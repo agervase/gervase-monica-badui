@@ -10,7 +10,6 @@ export const NumbersContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  margin: 20px 0;
   max-width: 400px;
 `;
 

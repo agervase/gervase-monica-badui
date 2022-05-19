@@ -7,7 +7,7 @@ import { LastNameInput } from "./../LastNameInput/LastNameInput";
 import React from "react";
 import { FirstNameInput } from "../FirstNameInput/FirstNameInput";
 import { FormTitle } from "../FormTitle/FormTitle";
-import { FormContainer } from "./Form.css";
+import { Divider, FormContainer } from "./Form.css";
 import { SubmitButton } from "../SubmitButton/SubmitButton";
 
 export const Form = () => {
@@ -16,12 +16,19 @@ export const Form = () => {
       <form id="resume-box" action="">
         <FormTitle />
         <FirstNameInput />
+        <Divider />
         <LastNameInput />
+        <Divider />
         <DobInput />
+        <Divider />
         <EmailInput />
+        <Divider />
         <PhoneInput />
+        <Divider />
         <AddressInput />
+        <Divider />
         <CommentInput />
+        <Divider />
         <SubmitButton />
       </form>
     </FormContainer>
