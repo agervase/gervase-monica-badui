@@ -14,13 +14,32 @@ export const LastNameInput = () => {
       setCharacters(newValue);
       let newArray = new Array(newValue).fill(0);
       setCharactersArray(newArray);
+      let newName: string = lastName;
+      for (let i = lastName.length; i < characters; i++) {
+        newName += " ";
+      }
+      setLastName(newName);
     }
   };
+
+  const updateLastName = (index: number, character: string) => {
+    console.log(index, character);
+    if (index > lastName.length - 1) return;
+    setLastName(
+      lastName.substring(0, index) + character + lastName.substring(index + 1)
+    );
+  };
+
   return (
     <div>
-      <label>Last Name: {lastName}</label>
+      <label>Last Name:</label>
+      <input value={lastName} required minLength={characters} />
+
       <Slider value={characters} min={0} max={15} onChange={handleChange} />
-      <LastNameSelectors selectorArray={charactersArray} />
+      <LastNameSelectors
+        selectorArray={charactersArray}
+        updateLastName={updateLastName}
+      />
     </div>
   );
 };
