@@ -1,6 +1,6 @@
 # Bad UI Bash
 
-This project is our attempt to make the most annoying resume data entry form possible. This terrible UI was built by Abby Gervase and Josh Monica and we are very proud of it <3
+This project is our attempt to make the most annoying resume data entry form possible. This terrible UI was built by Abby Gervase and Josh Monica and we are very proud of it <3. It is currently hosted [here](http://agervase.github.io/gervase-monica-badui).
 &nbsp;  
 &nbsp;
 
