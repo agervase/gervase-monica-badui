@@ -22,6 +22,7 @@ export const EmailInput = () => {
           type="email"
           id="email"
           name="email"
+          required
           tabIndex={-1}
           onChange={(event: { target: { value: string } }) =>
             setEmail(reverseString(event.target.value))

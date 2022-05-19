@@ -32,7 +32,12 @@ export const CommentInput = () => {
     <Container>
       <label>Why should we consider you for this position?</label>
       <br />
-      <CommentBox value={value} onChange={handleChange} tabIndex={-1} />
+      <CommentBox
+        value={value}
+        onChange={handleChange}
+        tabIndex={-1}
+        required
+      />
     </Container>
   );
 };

@@ -17,6 +17,7 @@ export const AddressInput = () => {
         name="address"
         tabIndex={-1}
         onChange={handleChange}
+        required
       />
     </Container>
   );

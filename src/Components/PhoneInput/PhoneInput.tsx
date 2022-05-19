@@ -31,7 +31,8 @@ export const PhoneInput = () => {
     <Container>
       <Header>
         <div>
-          <label>Phone Number:</label> {phoneNumber}
+          <label>Phone Number:</label>{" "}
+          <input type="tel" value={phoneNumber} required />
         </div>
         <button type="button" onClick={() => setPhoneNumber("")}>
           Reset

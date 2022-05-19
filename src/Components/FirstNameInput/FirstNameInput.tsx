@@ -4,7 +4,7 @@ import { Container } from "./FirstNameInput.css";
 
 // randomly generated name
 export const FirstNameInput = () => {
-  const [value, setValue] = React.useState<string>();
+  const [value, setValue] = React.useState<string>("");
 
   const config: Config = {
     dictionaries: [names],
@@ -18,7 +18,8 @@ export const FirstNameInput = () => {
   return (
     <Container>
       <div>
-        <label>First Name:</label> {value}
+        <label>First Name:</label>
+        <input value={value} required />
       </div>
       <button type="button" onClick={() => getNewName()}>
         Generate {value && `New`} Name
